@@ -8,7 +8,7 @@ display_commands() {
     echo "Available commands:"
     echo "  cd <room_name>"
     echo "  ls"
-    echo "  cat <room_name>"
+    echo "  cat inside.txt"
 }
 
 # Function to display room contents
@@ -23,10 +23,10 @@ display_room_contents() {
 
 # Main game loop
 echo "Welcome to Mr. Brave's Adventure!"
-echo "You have 1 minute to save your children from the Ghost."
+echo "You have 2 minutes to save your children from the Ghost. BE FAST!"
 echo "Type 'help' for instructions."
 current_time=$(date +%s)
-end_time=$((current_time + 60))  # Two minutes from now
+end_time=$((current_time + 120))
 
 previous_room=""
 current_room="$SCRIPT_DIR/rooms"
