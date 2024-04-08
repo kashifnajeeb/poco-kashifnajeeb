@@ -1,17 +1,14 @@
 #!/bin/bash
 
-# Get the directory where the script is located
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-# Function to display available commands
 display_commands() {
     echo "Available commands:"
     echo "  cd <room_name>"
     echo "  ls"
-    echo "  cat inside.txt"
+    echo "  cat <room_name>"
 }
 
-# Function to display room contents
 display_room_contents() {
     local room_file="$1"
     if [ -e "$room_file" ]; then
@@ -21,12 +18,11 @@ display_room_contents() {
     fi
 }
 
-# Main game loop
 echo "Welcome to Mr. Brave's Adventure!"
-echo "You have 2 minutes to save your children from the Ghost. BE FAST!"
+echo "You have 2 minutes to save your children from the Ghost."
 echo "Type 'help' for instructions."
 current_time=$(date +%s)
-end_time=$((current_time + 120))
+end_time=$((current_time + 230))  # Two minutes from now
 
 previous_room=""
 current_room="$SCRIPT_DIR/rooms"

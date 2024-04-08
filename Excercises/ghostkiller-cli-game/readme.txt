@@ -1,13 +1,13 @@
-TO RUN THIS GAME type `bash game-engine.sh`
+TO RUN THIS GAME TYPE `bash game_engine.sh` in Terminal
 
 STORY:
 Mr. Brave children got kidnapped by a Ghost and he got information that Ghost who kidnapped his children, lives in this Building. Now he have to save his children and kill the Ghost, so that he doesn't kidnap his children again.
 
 RULES:
-- ONLY 2 Minute to solve the riddles
+- ONLY 2 Minutes to solve the riddles
 
 CONTROLS:
-- cd: TO ENTER ANY room
+- cd: TO ENTER ANY ROOM
 - ls: TO VIEW OTHER AVAILABLE LOCATIONS
 - cat: TO LOOK INSIDE THE LOCATIONS
 
