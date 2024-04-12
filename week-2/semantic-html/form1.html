@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Formular</title>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Persönliche Daten</legend>
+        <label for="title">Titel:</label>
+        <input
+          required
+          type="text"
+          id="title"
+          name="title"
+          value="Dr. hc"
+        /><br />
+
+        <label for="first-name">Vorname:</label>
+        <input
+          required
+          type="text"
+          id="first-name"
+          name="first-name"
+          value="Peter"
+        /><br />
+
+        <label for="last-name">Nachname:</label>
+        <input
+          required
+          type="text"
+          id="last-name"
+          name="last-name"
+          value="Muster"
+        /><br />
+
+        <label>Geschlecht:</label>
+        <input required type="radio" id="gender-male" name="gender" value="M" />
+        <label for="gender-male">M</label>
+        <input
+          required
+          type="radio"
+          id="gender-female"
+          name="gender"
+          value="W"
+        />
+        <label for="gender-female">W</label><br />
+
+        <label>Sprache:</label>
+        <input
+          required
+          type="radio"
+          id="language-de"
+          name="language"
+          value="DE"
+          checked
+        />
+        <label for="language-de">DE</label>
+        <input
+          required
+          type="radio"
+          id="language-fr"
+          name="language"
+          value="FR"
+        />
+        <label for="language-fr">FR</label>
+        <input
+          required
+          type="radio"
+          id="language-it"
+          name="language"
+          value="IT"
+        />
+        <label for="language-it">IT</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Kontaktdaten</legend>
+        <label for="phone">Telefon:</label>
+        <input required type="text" id="phone" name="phone" /><br />
+
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" /><br />
+
+        <label for="main-number">Hauptnummer:</label>
+        <input required type="text" id="main-number" name="main-number" /><br />
+
+        <label for="fax">Fax:</label>
+        <input required type="text" id="fax" name="fax" /><br />
+
+        <label for="email1">Mail 1:</label>
+        <input type="email" id="email1" name="email1" /><br />
+
+        <label for="email2">Mail 2:</label>
+        <input required type="email" id="email2" name="email2" /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Adressdaten</legend>
+        <label for="company">Firma:</label>
+        <input required type="text" id="company" name="company" /><br />
+
+        <label for="company-additional">Zusatz Firma:</label>
+        <input
+          type="text"
+          id="company-additional"
+          name="company-additional"
+        /><br />
+
+        <label for="homepage">Homepage:</label>
+        <input required type="url" id="homepage" name="homepage" /><br />
+
+        <label for="address">Adresse / Haus Nr:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          value="Musterstrasse 33"
+        /><br />
+
+        <label for="address-additional">Zusatz Adresse:</label>
+        <input
+          type="text"
+          id="address-additional"
+          name="address-additional"
+        /><br />
+
+        <label for="po-box">Postfach:</label>
+        <input required type="text" id="po-box" name="po-box" /><br />
+
+        <label for="zip-city">PLZ / Ort:</label>
+        <input
+          type="text"
+          id="zip-city"
+          name="zip-city"
+          value="8800 Musterstadt"
+        /><br />
+
+        <label for="state-country">Kanton / Land:</label>
+        <input
+          required
+          type="text"
+          id="state-country"
+          name="state-country"
+          value="ZH Schweiz"
+        /><br />
+      </fieldset>
+
+      <input required type="submit" value="Speichern" />
+    </form>
+  </body>
+</html>
