@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d3d3d3;
+}
+
+a,
+button {
+  cursor: revert;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+}
+
+::placeholder {
+  color: unset;
+}
+
+::marker {
+  content: initial;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  color: #7f7f7f;
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h1 span {
+  font-weight: bold;
+  color: black;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+main {
+  width: 70%;
+  margin: 5rem auto;
+  background-color: #fff;
+  padding: 10rem 5rem;
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+}
+
+figcaption {
+  padding: 2rem;
+}
+
+a {
+  border: 0.1rem solid #000;
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+}
