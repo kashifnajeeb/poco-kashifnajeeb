@@ -33,4 +33,4 @@ function merge(leftHalf, rightHalf) {
     .concat(rightHalf.slice(rightIndex));
 }
 
-console.log(JSON.stringify(mergeSort([12, 8, 5, 3, 9, 11, 4])));
+console.log(mergeSort([12, 8, 5, 3, 9, 11, 4]));

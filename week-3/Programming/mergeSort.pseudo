@@ -1,0 +1,31 @@
+Initialize mergeSort function(arr):
+    If arr length is less or equal to 1:
+    Return arr;
+
+    Initialize split one half of the array by dividing the length with 2 and round it for incase odd number length
+
+    Initialize get the left half using 0 until half
+    Initialize get the right half using from half to the remaining length
+
+    Initialize leftHalf to mergeSort(leftHalf);
+    Initialize rightHalf to mergeSort(rightHalf);
+
+    Return merge(leftHalf, rightHalf);
+
+Initialize merge function(leftHalf, rightHalf):
+
+    Initialize result as an empty array
+    Initialize leftIndex to 0
+    Initialize rightIndex to 0
+
+    While(leftIndex is smaller than leftHalf.length and rightIndex is smaller than rightHalf to length):
+        If leftHalf[leftIndex] is smaller than rightHalf[rightIndex]:
+            Add leftHalf[leftIndex] to result
+            leftIndex + 1
+        Else:
+            Add rightHalf[rightIndex] to result
+            rightIndex++
+
+    Return concat leftHalf with leftIndex and also concat rightHalf with rightIndex
+
+Output(mergeSort(12, 6, 3, 2, 5))
