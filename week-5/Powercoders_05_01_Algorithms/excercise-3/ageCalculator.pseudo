@@ -1,0 +1,5 @@
+currentAge = prompt user to enter the current age
+retirementAge = prompt user to enter the retirement age
+currentYear = get Current year from user device
+
+if currentAge or retirementAge is empty or is not a number alert user to enter a valid age

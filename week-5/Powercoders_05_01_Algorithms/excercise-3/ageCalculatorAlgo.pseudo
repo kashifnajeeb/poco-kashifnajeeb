@@ -1,0 +1,2 @@
+to get the the years until retirement just do retirementAge - currentAge
+using the currentYear + add the retirementAge - currentAge I can get the year in which the user will get retired

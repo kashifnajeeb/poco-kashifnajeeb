@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+img {
+  height: 10rem;
+  display: block;
+}
+
+ul {
+  margin-top: 1rem;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li {
+  font-weight: 700;
+}
+
+li.read {
+  color: green;
+}
